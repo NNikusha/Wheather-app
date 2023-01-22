@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheater app</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./weather.css" />
+  </head>
+  <body>
+    <header id="Header">
+      <div id="Left-side">
+        <img
+          id="Image-Header"
+          src="./Image/PartlyCloudy.svg"
+          alt="cloud image"
+        />
+        <p>Weather by VicBox</p>
+      </div>
+      <div id="Right-side">
+        <a href="#">GitHub</a>
+        <a href="#">About</a>
+      </div>
+    </header>
+    <section id="section">
+      <div class="section_items" id="Location">
+        <div class="Main-upp">
+          <img src="./Image/Sunny.svg" alt="sun" />
+          <div>
+            <h2 id="location-city"></h2>
+            <p id="day">10 jan</p>
+          </div>
+        </div>
+        <div class="Main-interm">
+          <h1 id="celsius_number"></h1>
+          <p class="Info"></p>
+        </div>
+        <div class="Main-low">
+          <div class="data_items">
+            <div class="weather-data" id="Visiblity">
+              <div>
+                <img src="./Image/Vector1.png" alt="eye" />
+                <p>Visiblity</p>
+              </div>
+              <div>
+                <p id="VisibilityNumber">9</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="weather-data">
+              <div>
+                <img src="./Image/Vector2.svg" alt="temperature" />
+                <p>Feels like</p>
+              </div>
+              <p id="FeelsLikeNumber">3</p>
+            </div>
+          </div>
+          <div class="data_items">
+            <div class="weather-data">
+              <div>
+                <img src="./Image/Vector3.png" alt="water" />
+                <p>Humidity</p>
+              </div>
+              <div>
+                <p id="humidityNumber">0</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="weather-data" id="wind_data">
+              <div>
+                <img src="./Image/Vector4.png" alt="wind" />
+                <p>Wind</p>
+              </div>
+              <div>
+                <p id="windNumber">2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_items" id="add_location">
+        <button id="add_button" type="button">
+          <img src="./Image/Vector+.png" alt="plus sign" />
+        </button>
+        <label for="">Add New Location</label>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Made with <img src="./Image/heart.svg" alt="heart" /> by Nika
+        Tavartkiladze
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

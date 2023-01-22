@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  color: white;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(./Image/background.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8%;
+  overflow-x: hidden;
+}
+
+#Header {
+  background: rgba(255, 255, 255, 0.19);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4.75rem 0 4.25rem;
+  width: 100%;
+  flex: 1;
+  position: relative;
+  animation: headerAnimation 1.5s ease;
+}
+#Header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#Header a,
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+#Header a:hover {
+  transform: translateY(-0.2rem);
+}
+
+#Header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#celsius_number::after {
+  content: "°C";
+  font-size: 2rem;
+  font-weight: 300;
+  position: absolute;
+  top: 20%;
+  line-height: 0;
+}
+
+#section {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  transition-duration: 0.95ms;
+}
+
+#Location {
+  display: flex;
+  flex-direction: column;
+}
+
+#Location > :nth-of-type(2) {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section_items {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(16px);
+  border-radius: 3rem;
+  height: 66vh;
+  width: 26.875rem;
+  padding: 2rem 2rem;
+  transition-duration: 2s;
+
+}
+.Main-upp {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.Main-interm {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.Main-interm h1 {
+  font-size: rem;
+  font-weight: 250;
+}
+.Main-low {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+  width: 100%;
+}
+.data_items {
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.weather-data > :first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.weather-data > :last-child {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  display: flex;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  justify-content: center;
+ 
+}
+
+#Location p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#Location h2 {
+  font-size: 2.25rem;
+}
+
+#Location h1 {
+  font-size: 10rem;
+  font-weight: 300;
+}
+
+#celsius_number {
+  height: min-content;
+  position: relative;
+}
+
+
+
+
+
+#add_location,
+#add_location button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+#add_location button {
+  display: flex;
+  font-size: 4rem;
+  border: none;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.26);
+  margin-top: 0.5rem;
+}
+
+#add_location img {
+  width: 3rem;
+}
+
+#add_location label {
+  font-size: 1.75rem;
+}
+.line {
+  height: 19px;
+  width: 1px;
+  background-color: white;
+}
+
+footer {
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: 300;
+  flex: 1;
+}
+
+footer > p {
+  display: flex;
+  gap: 16px;
+}
+footer > img {
+  flex-shrink: 0;
+}
+
+@media (max-width: 485px) {
+  body {
+    height: 180vh;
+  }
+  #Header a,
+  p {
+    font-size: 1.5rem;
+  }
+  #Header p {
+    display: none;
+  }
+
+  #Header > :first-child {
+    gap: 0;
+  }
+
+  #Header_icon {
+    width: 4.75rem;
+  }
+
+  .weather-data {
+    gap: 1rem;
+  }
+
+  .section_items {
+    height: 70vh;
+    margin-left:16px;
+    margin-right:16px;
+  }
+
+  #Visiblity {
+    gap: 1.7rem;
+  }
+
+  #wind_data {
+    gap: 3.2rem;
+  }
+
+  footer p {
+   display: none;
+  }
+}
